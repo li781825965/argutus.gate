@@ -1,0 +1,11 @@
+[Unit]
+Description=Gateway Serivce
+Afetr=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/sudo /home/pi/gateway
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
